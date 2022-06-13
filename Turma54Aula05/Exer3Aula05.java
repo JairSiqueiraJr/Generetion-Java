@@ -11,25 +11,24 @@ public class Exer3Aula05 {
 	
 	public static void main(String[] args) {
 		Scanner num = new Scanner(System.in);
-		double[][] n1 = new double[3][4];
-		double[][] n2 = new double[3][4];
-		double[][] m1 = new double[3][4];
+		double[][] n1 = new double[4][6];
+		double[][] n2 = new double[4][6];
+		double[][] m1 = new double[4][6];
 		int ent;
 		
 		for(int i = 0; i < n1.length; i++) {
-			for(int j = 0; j < n2.length; j++) {
+			for(int j = 0; j < n1[i].length; j++) {
 				
 				n1[i][j] = num.nextInt();
-				n2[i][j] = num.nextInt();
 			}
 				
 		 System.out.println();
 		}
 		for(int i = 0; i < n1.length; i++) {
 			
-			for(int j = 0; j < n2.length; j++) {
+			for(int j = 0; j < n1[i].length ; j++) {
 				
-				System.out.println(n1[i][j] + n2[i][j] + " | ");
+				System.out.print(n1[i][j] + n2[i][j] + " | ");
 				
 			}
 			System.out.println();
